@@ -5,6 +5,13 @@ const cors = require('cors');
 const port = process.env.PORT || 5000
 const { MongoClient, ServerApiVersion } = require('mongodb');
 
+
+/* configaration 
+  DB_USER = doctorDB
+  DB_PASS = 7oi7WHzOrg78MK4j 
+*/
+
+
 app.use(cors());
 app.use(express.json())
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.m9khx.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
